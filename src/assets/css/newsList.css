@@ -1,0 +1,26 @@
+.sortElements {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px;
+}
+
+.newsList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+.loadBtnDiv {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0 0;
+}
+
+.btn {
+    color: #fff !important;
+    border-radius: 10px !important;
+    background-color: #1976d2 !important;
+    text-decoration: none !important;
+    width: 30%;
+}

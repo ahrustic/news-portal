@@ -1,0 +1,77 @@
+.backDiv {
+    margin: 20px 0 0 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.backBtn {
+    color: #fff !important;
+    border-radius: 10px !important;
+    background-color: #1976d2 !important;
+    width: 10%;
+}
+
+.detailWrapper {
+    width: 64%;
+    margin : 100px auto;
+    background-color : #FFF;
+    -webkit-box-shadow: 10px 10px 93px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 93px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 93px 0px rgba(0,0,0,0.75);
+    padding: 10px;
+}
+
+.detailDiv {
+    position : relative;
+}
+
+.imageDiv {
+    position : relative;
+    left : 15%;
+    top : -40px;
+    height : fit-content;
+    width : 70%;
+    -webkit-box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.75);
+    overflow: hidden;
+}
+
+.image {
+    height: auto;
+    width: 100%;
+}
+
+.title {
+    padding-top : 15px;
+    color : #4B4B4B;
+    text-align: center;
+}
+
+.authorDiv {
+    display: flex;
+}
+
+.info {
+    background-color : #9ECAFF;
+    width: fit-content;
+    border-radius : 20px;
+    padding : 15px;
+    margin-right : 6px;
+    text-align : center;
+}
+
+.separator {
+    margin-top : 10px;
+    border : 1px solid #C3C3C3;
+}
+
+.description {
+    text-align: justify;
+    padding-top : 10px;
+    font-size : 0.95rem;
+    line-height: 150%;
+    color : #4B4B4B;
+}

@@ -1,0 +1,92 @@
+.root {
+   width: 100% !important;
+   height: 100% !important;
+}
+
+.gridList {
+    width: 500px;
+    overflow-y: auto;
+    height: fit-content;
+    margin: 10px !important;
+}
+
+.link {
+    color: #eae;
+}
+
+.title {
+    font-weight: 800;
+}
+
+.media {
+    height: 400px;
+}
+
+.cardOverlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #fff;
+    transform: translateY(100%);
+    transition: .2s ease-in-out;
+}
+
+.card:hover .cardOverlay {
+    transform: translateY(0);
+}
+
+.cardHeader {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    padding: 2em;
+    border-radius: calc(40 * 1px) 0 0 0;
+    background-color: #fff;
+    transform: translateY(-100%);
+    transition: .2s ease-in-out;
+}
+
+.card:hover .cardHeader {
+    transform: translateY(0);
+}
+
+.cardDescription {
+    padding: 0 2em 2em;
+    margin: 0;
+    color: #D7BDCA;
+    font-family: "MockFlowFont";
+    display: -webkit-box;
+    background-color: #fff;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    justify-content: flex-end;
+}
+
+.cardArc {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    z-index: 1;
+}
+
+.cardArc path {
+    fill: #fff;
+    d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+}
+
+.readArticleBtn {
+    color: #fff !important;
+    border-radius: 10px !important;
+    background-color: #1976d2 !important;
+    text-decoration: none !important;
+}
+
+.readArticleBtn:hover {
+    background-color: #3485d6 !important;
+}
