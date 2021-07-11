@@ -1,8 +1,8 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import configureStore from 'redux-mock-store';
-import { render, screen } from '@testing-library/react';
-import {mount, shallow, configure} from 'enzyme';
+import { render } from '@testing-library/react';
+import {mount, configure} from 'enzyme';
 import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
 import App from './App';
 import NewsList from "./components/NewsList";
