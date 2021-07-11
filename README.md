@@ -5,6 +5,7 @@
 In the project directory, you can run:
 
 ### `yarn`
+Install necessary dependencies.
 
 ### `yarn start`
 
