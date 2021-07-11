@@ -19,17 +19,16 @@ const ArticleDetail = () => {
 
     const fetchArticleDetail = async () => {
         const article = await articleDetail(articleTitle);
-        dispatch(selectedArticle(article))
+        dispatch(selectedArticle(article));
+
+        if(article?.publishedAt) {
+            const date = new Date(article.publishedAt);
+            setPublishDate(`${date.toDateString()} ${date.getHours()}:${date.getMinutes() === 0 ? '00' : date.getMinutes()}`)
+        }
     }
 
     useEffect(() => {
-        if (articleTitle) fetchArticleDetail()
-                            .then(res => {
-                                if(res?.publishedAt) {
-                                    const date = new Date(res.publishedAt);
-                                    setPublishDate(`${date.toDateString()} ${date.getHours()}:${date.getMinutes()}`)
-                                }
-                            });
+        if (articleTitle) fetchArticleDetail();
         return () => {
             dispatch(removeSelectedArticle());
         }
